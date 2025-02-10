@@ -1,0 +1,19 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+.box {
+  
+  opacity: 0;
+  transform: translateX(250px); /* Start off slightly below the viewport */
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.box.in-viewport {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
